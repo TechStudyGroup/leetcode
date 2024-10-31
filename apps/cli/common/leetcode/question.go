@@ -41,8 +41,8 @@ func (i *Instance) Question(titleSlug string) (err error) {
 		Set("origin", HostLeetcode).
 		Set("referer", HostLeetcode).
 		Set("user-agent", i.userAgent).
-		Set("x-csrftoken", i.csrftoken).
-		AddCookies(i.cookie).
+		// Set("x-csrftoken", i.csrftoken).
+		// AddCookies(i.cookie).
 		Type("json").
 		Send(query).EndBytes(); len(errs) != 0 {
 		err = errs[len(errs)-1]

@@ -17,7 +17,7 @@ func (i *Instance) CSRF() (err error) {
 		Post(fmt.Sprintf("%s/graphql/", HostLeetcode)).
 		Set("referer", HostLeetcode).
 		Set("origin", HostLeetcode).
-		Set("authority", "leetcode-cn.com").
+		Set("authority", "leetcode.cn").
 		Set("x-timezone", "Asia/Shanghai").
 		Set("x-operation-name", "globalData").
 		Set("accept-language", "zh-CN").

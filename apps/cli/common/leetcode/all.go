@@ -38,7 +38,7 @@ func (i *Instance) All(gen bool) (questions []table.Question, err error) {
 		Set("referer", fmt.Sprintf("%s/problemset/all/", HostLeetcode)).
 		Set("user-agent", i.userAgent).
 		Set("x-csrftoken", i.csrftoken).
-		AddCookies(i.cookie).
+		// AddCookies(i.cookie).
 		Type("json").
 		Send(`{"operationName":"allQuestions","variables":{},"query":"query allQuestions {\n  allQuestions {\n    ...questionSummaryFields\n    __typename\n  }\n}\n\nfragment questionSummaryFields on QuestionNode {\n  title\n  titleSlug\n  translatedTitle\n  questionId\n  questionFrontendId\n  status\n  difficulty\n  isPaidOnly\n  categoryTitle\n stats\n  __typename\n}\n"}`).
 		EndBytes(); len(errs) != 0 {
@@ -87,6 +87,8 @@ func (i *Instance) All(gen bool) (questions []table.Question, err error) {
 		if strings.HasSuffix(question.Title, question.CategoryTitle) {
 			question.Title = strings.TrimSuffix(question.Title, " "+question.CategoryTitle)
 		}
+
+		fmt.Println(question)
 
 		var q = &table.Question{
 			QuestionID:         qid,

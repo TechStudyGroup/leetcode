@@ -38,7 +38,7 @@ func (i *Instance) Login() (err error) {
 			Name:    "csrftoken",
 			Value:   i.csrftoken,
 			Path:    "/",
-			Domain:  ".leetcode-cn.com",
+			Domain:  ".leetcode.cn",
 			Secure:  true,
 			Expires: time.Now(),
 		}).
