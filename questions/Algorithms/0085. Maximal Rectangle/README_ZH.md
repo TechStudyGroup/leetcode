@@ -5,7 +5,7 @@
 <p>&nbsp;</p>
 
 <p><strong>示例 1：</strong></p>
-<img alt="" src="https://assets.leetcode.com/uploads/2020/09/14/maximal.jpg" style="width: 402px; height: 322px;" />
+<img alt="" src="https://pic.leetcode.cn/1722912576-boIxpm-image.png" style="width: 402px; height: 322px;" />
 <pre>
 <strong>输入：</strong>matrix = [["1","0","1","0","0"],["1","0","1","1","1"],["1","1","1","1","1"],["1","0","0","1","0"]]
 <strong>输出：</strong>6
@@ -15,29 +15,15 @@
 <p><strong>示例 2：</strong></p>
 
 <pre>
-<strong>输入：</strong>matrix = []
+<strong>输入：</strong>matrix = [["0"]]
 <strong>输出：</strong>0
 </pre>
 
 <p><strong>示例 3：</strong></p>
 
 <pre>
-<strong>输入：</strong>matrix = [["0"]]
-<strong>输出：</strong>0
-</pre>
-
-<p><strong>示例 4：</strong></p>
-
-<pre>
 <strong>输入：</strong>matrix = [["1"]]
 <strong>输出：</strong>1
-</pre>
-
-<p><strong>示例 5：</strong></p>
-
-<pre>
-<strong>输入：</strong>matrix = [["0","0"]]
-<strong>输出：</strong>0
 </pre>
 
 <p>&nbsp;</p>

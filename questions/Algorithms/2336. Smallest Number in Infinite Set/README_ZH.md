@@ -14,7 +14,8 @@
 
 <p><strong>示例：</strong></p>
 
-<pre><strong>输入</strong>
+<pre>
+<strong>输入</strong>
 ["SmallestInfiniteSet", "addBack", "popSmallest", "popSmallest", "popSmallest", "addBack", "popSmallest", "popSmallest", "popSmallest"]
 [[], [2], [], [], [], [1], [], [], []]
 <strong>输出</strong>
